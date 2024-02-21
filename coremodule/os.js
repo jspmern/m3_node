@@ -1,0 +1,13 @@
+let os=require('os')
+// console.log(os)
+let result;
+//result=os.arch()
+//result=os.hostname()
+//result=os.platform()
+//result=os.tmpdir()
+//result=os.type()
+//result=os.userInfo()
+//result=os.totalmem()
+result=os.freemem()
+result=os.homedir()
+console.log(result )
