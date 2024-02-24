@@ -43,7 +43,7 @@ let server = http.createServer((req, res) => {
                     res.writeHead(500, { "Content-Type": "application/json" });
                     res.end(JSON.stringify(parseData));
 
-                    //dynmic data form nodejs
+                    //dynmic data  creation form nodejs
                     // let template=''
                     // parseData.map((item)=>{
                     //     template += `<h1>${item.text}</h1> <br/>`
