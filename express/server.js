@@ -1,6 +1,6 @@
 //write a first code for creating api
 let express = require("express");
-const { route } = require("./route");
+// const { route } = require("./route");
 let app = express();
  
  //get
@@ -12,8 +12,16 @@ let app = express();
  //all
  //Router
   
- app.use(express.json())
-app.use(route) 
+//  app.use(express.json())
+// app.use(route) 
+app.get('/',(req,res)=>{
+  console.log(req.body)
+  console.log(req.query)
+  console.log(req.params)
+  console.log(req.headers)
+  
+
+})
 app.listen(8080, () => {
   console.log("connection done");
 });
